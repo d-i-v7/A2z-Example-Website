@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2z Website</title>
+    <!-- Custom Css Link -->
+     <link rel="stylesheet" href="css/app.css">
+     <link rel="stylesheet" href="css/about.css">
+     <!-- Font Awesome Cdn Links -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<body>
+    <!--Start Header Section -->
+    <div class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="Nike"></a>
+        <nav>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About-Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+            </ul>
+            <div class="cart">
+                <button id="show-cart" class="btn-cart"><i class="fas fa-cart-flatbed"></i></button>
+            <span class="cart-text">
+                (0)
+            </span>
+            <div class="cart-items">
+                <div class="cart-header">
+                    <h2>Shopping Cart</h2>
+                    <a href="#">View All</a>
+                </div>
+                <!-- Items will be added dynamically here -->
+                <div class="cart-footer">
+                                        <button onclick="document.location='checkout.html'" class="btn-primary">Checkout</button>
+
+                </div>
+            </div>
+        </div>
+            <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="btn-primary" type="submit">Login</button>
+            </form>
+            <p>Don't Have Account <a id="showRegister" href="#">Create Now</a></p>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" name="regUsername" required>
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" name="regEmail" required>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="regPassword" required>
+                <button class="btn-primary" type="submit">Register</button>
+            </form>
+            <p>I Have All Ready Account! <a id="showLogin" href="#">Login Now</a></p>
+        </div>
+    </div>
+
+           
+            <button class="btn-primary login-btn">Login &nbsp; <i class="fas fa-user"></i></button>       
+        </nav>
+        <button class="menu-btn"><i class="fas fa-bars"></i></button>
+     </div>
+    <!--End Header Section -->
+<!-- Start About us -->
+    <section class="our-story">
+        <div class="about-page-header">
+            <h1>About Us</h1>
+<p>This Page You Can Read Our Information!</p>    
+    </div>
+        <div class="content">
+            <div class="image">
+            <img src="images/about-image2.jpg" alt="About Us Image" class="about-image">
+            <img src="images/about-image3.jpg" alt="About Us Image" class="about-image">
+        </div>
+            <div class="text">
+                <h2>Who We Are</h2>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, temporibus? consectetur adipisicing elit. Ea unde voluptas nisi blanditiis ex repellendus aliquid reprehenderit perferendis, labore fugiat vero architecto amet dolor impedit aperiam odit excepturi corporis! Harum!</p>
+                
+                <h2>Background</h2>
+                <p>Nam eget faucibus felis. Vivamus quis enim lectus. Phasellus justo mi, ornare id venenatis ac, gravida sed ante. Fusce eget nisl id nisi tempus blandit. Integer ipsum massa, fermentum id ipsum aliquet, tempus sagittis odio. Pellentesque maximus turpis et eros accumsan.</p>
+                
+                <h2>Mission</h2>
+                <p>Nam eget faucibus felis. Vivamus quis enim lectus. Phasellus justo mi, ornare id venenatis ac, gravida sed ante. Fusce eget nisl id nisi tempus blandit. Integer ipsum massa, fermentum id ipsum aliquet, tempus sagittis odio. Pellentesque maximus turpis et eros accumsan.</p>
+                
+                <h3>Vision</h3>
+                <p>Nam eget faucibus felis. Vivamus quis enim lectus. Phasellus justo mi, ornare id venenatis ac, gravida sed ante. Fusce eget nisl id nisi tempus blandit. Integer ipsum massa, fermentum id ipsum aliquet, tempus sagittis odio. Pellentesque maximus turpis et eros accumsan.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End About us -->
+      <!--Start Our Part Section -->
+  <div class="o-p-section">
+    <div class="logoes">
+        <div class="logo">
+            <img src="images/logo1.png" alt="logo1">
+        </div>
+        <div class="logo">
+            <img src="images/logo2.png" alt="logo2">
+        </div>
+        <div class="logo">
+            <img src="images/logo3.png" alt="logo3">
+        </div>
+        <div class="logo">
+            <img src="images/logo4.png" alt="logo4">
+        </div>
+    </div>
+  </div>
+  <!--End Our Part Section -->
+  <!-- Start Footer Section -->
+   <footer>
+    <div class="footer-header"><a href="#" class="logo">Footer Logo</a> 
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+        <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+        <a href="#"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a>
+    </div>
+    </div>
+    <div class="footer-footer">
+        <ul>
+            <li><h2>Quick Links</h2></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li><h2>Shop</h2></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">S-Products</a></li>
+            <li><a href="#">N-Products</a></li>
+        </ul>
+        <ul>
+            <li><h2>Security</h2></li>
+            <li><a href="#">Privecy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        <ul>
+            <li><h2>Address</h2></li>
+            <li><a href="#"><i class="fas fa-location-dot"></i>&nbsp;Somali,Mogdishu</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>&nbsp;+25261123456</a></li>
+            <li><a href="#"><i class="fas fa-envlope"></i>&nbsp;shop@a2zsports.shop</a></li>
+        </ul>
+    </div>
+    <div class="coppy"><p>©️2024 All Right Reserved By <a href="#">A2z</a></p></div>
+   </footer>
+  <!-- ENd Footer Section -->
+    <!-- Custom js Link -->
+     <script src="js/app.js"></script>
+</body>
+</html>

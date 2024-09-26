@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Relaway',sans-serif;
+}
+/* THis is A COlorss varible Css */
+:root{
+    --bg--color: #DCDFE1;
+    --p--color: #130540;
+    --s--color: #0090DD;
+    --f--color:#707070;
+}
+/* We Start A Css Code */
+body
+{
+background-color: var(--bg--color);
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+}
+
+/* Start Contact us Css */
+
+.contact
+{
+    padding:20px 50px 100px 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact .contact-header
+{
+    width:100%;
+    text-align:center;
+}
+
+.contact .contact-header h1
+{
+    font-size:40px;
+    color:var(--s--color);
+}
+
+.contact .contact-header h1 span
+{
+    color:var(--p--color);
+}
+
+.contact .all
+{
+    display:flex;
+    border:1px solid #444;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top: 20px;
+}
+
+.contact .left
+{
+    background-color:var(--s--color);
+    padding:20px;
+    color:#fff;
+    text-align:center;
+
+}
+
+.contact .left .social
+{
+    margin-top:30px;
+}
+
+.contact .left .social .icon
+{
+    padding:20px 0px;
+}
+.contact .left .social .icon i
+{
+    font-size:25px;
+}
+.contact .all .right form
+{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    background-color:var(--bg--color);
+    width:65vh;
+    height:100%;
+    justify-content:center;
+    align-items: start !important;
+}
+.contact .all .right form input
+{
+    border:none;
+    outline:1px solid #b6b6b6;
+    padding:7px 10px;
+    border-radius:3px;
+    width: 100%;
+}
+.contact .all .right form input:focus
+{
+    outline:1px solid #0090DD;
+
+}
+.contact .all .right form textarea:focus
+{
+    outline:1px solid #0090DD;
+
+}
+.contact .all .right form textarea
+{
+    border:none;
+    outline:1px solid #707070;
+    padding:7px 10px;
+    border-radius:3px;
+    width: 100%;
+}
+.contact .all .right form label
+{
+    margin:5px 4px;
+}
+.contact .all .right form button
+{
+    background-color:var(--s--color);
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    padding:10px 20px;
+    width:100%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .contact .all
+    {
+        flex-direction: column !important;
+    }
+   
+    .contact .left .social
+    {
+
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .contact .left .social .icon i
+    {
+        font-size:16px !important;
+    }
+    .contact .left .social .icon h4
+    {
+        font-size:10px !important;
+    }
+}

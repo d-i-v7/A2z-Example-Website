@@ -1,0 +1,54 @@
+:root {
+    --bg-color: #DCDFE1;
+    --p-color: #130540;
+    --s-color: #0090DD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+.shop-header
+{
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px !important;
+}
+.shop-header .filter
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.shop-header .filter select
+{
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px -1px rgba(0,0,0,0.28);
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.shop-header .search
+{
+    background-color: #fff;
+    padding: 7px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 4px -1px rgba(0,0,0,0.28);
+    
+}
+
+.shop-header .search input
+{
+    border: none;
+    outline: none;
+    padding: 2px 0px;
+    margin-left: 5px;
+}

@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #DCDFE1;
+    --p-color: #130540;
+    --s-color: #0090DD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+.our-story {
+    text-align: center;
+    /* padding: 50px; */
+    /* background-color: #ffffff; */
+
+}
+
+.about-page-header {
+    background: linear-gradient(to right, var(--p-color), var(--s-color));
+    color: white;
+    padding: 50px 20px;
+}
+
+.about-page-header h1 {
+    margin: 0;
+    font-size:2.4em ;
+}
+
+.about-page-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.our-story .content
+{
+    display: flex;
+    padding: 100px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.our-story .content .image
+{
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.about-image {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.text {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.text h2, .text h3 {
+    color: var(--p-color);
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.text p {
+    color: var(--p-color);
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}

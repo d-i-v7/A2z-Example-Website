@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xirfadeeye - Secure Checkout</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 50%; margin: 0 auto; padding: 20px; }
+        label { display: block; margin-top: 10px; }
+        input { width: 100%; padding: 8px; margin-top: 5px; }
+        button { padding: 10px 15px; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Checkout</h1>
+        <form id="checkout-form" method="POST" action="checkout.php">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required readonly>
+            <label for="account">Account Number:</label>
+            <input type="text" id="account" name="account" required>
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+
+    <script>
+        // Assume the total amount is stored in localStorage (from cart page)
+        document.getElementById('amount').value = localStorage.getItem('totalAmount') || '0';
+    </script>
+</body>
+</html>
